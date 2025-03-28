@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm ngược sinh nhật</title>
+    <style>
+        body {
+          text-align: center;
+          padding: 20px;
+          font-family: Arial, sans-serif;
+
+          color: white;
+        }
+        .container {
+          max-width: 400px;
+          margin: 50px auto;
+          padding: 20px;
+               background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+          border-radius: 15px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        input {
+          width: 90%;
+          padding: 12px;
+          font-size: 18px;
+          border: none;
+          border-radius: 10px;
+          text-align: center;
+          outline: none;
+        }
+        button {
+          width: 100%;
+          padding: 12px;
+          font-size: 18px;
+          margin-top: 10px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 0.3s;
+          font-weight: bold;
+        }
+        #calculateBtn { background: #ff7eb3; color: white; }
+        #calculateBtn:hover { background: #ff4f93; }
+        #shareBtn { background: #00c896; color: white; display: none; }
+        #shareBtn:hover { background: #009b75; }
+        #result { font-size: 22px; font-weight: bold; margin-top: 15px; }
+        #batteryStatus { margin-top: 15px; font-size: 16px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Đếm ngược sinh nhật</h1>
+    <input type="text" id="birthdayInput" placeholder="Nhập ngày sinh (dd/mm)">
+    <button id="calculateBtn">Tính toán</button>
+    <div id="result"></div>
+    <button id="shareBtn">Chia sẻ kết quả</button>
+    <div id="batteryStatus"> Đang kiểm tra trạng thái pin...</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

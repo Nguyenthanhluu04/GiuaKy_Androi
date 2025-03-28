@@ -1,0 +1,5 @@
+{
+  "appId": "com.example.myhtmlapp",
+  "appName": "Đếm ngược sinh nhật",
+  "webDir": "capacitor-app"
+}
